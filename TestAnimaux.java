@@ -1,11 +1,12 @@
 public class TestAnimaux {
     public static void main(String[] args) {
-        Animal a = new Animal("Bête", 3);
-        Chien c = new Chien("Rex", 5);
-        Chat ch = new Chat("Mimi", 2);
+        Animal[] animaux = new Animal[3];
+        animaux[0] = new Animal("Bête", 3);
+        animaux[1] = new Chien("Rex", 5);
+        animaux[2] = new Chat("Mimi", 2);
 
-        a.faireDuBruit();   // L'animal fait un bruit.
-        c.faireDuBruit();   // Rex aboie !
-        ch.faireDuBruit();  // Mimi miaule !
+        for (Animal a : animaux) {
+            a.faireDuBruit();
+        }
     }
 }
