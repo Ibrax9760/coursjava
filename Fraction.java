@@ -1,4 +1,3 @@
-package coursjava;
 public class Fraction {
     private final int num;
     private final int den;
@@ -42,7 +41,6 @@ public class Fraction {
     return (double) this.num / this.den;
   }
 
-    @Override
     public String toString() {
     return num + "/" + den;
   }
