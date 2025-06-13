@@ -11,5 +11,5 @@ public class App {
         Player p = new Player("Ibrahim", epee);
 
         System.out.println(p.getName() + " est prêt pour le combat !");
-    }
+     }
 }
