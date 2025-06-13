@@ -31,19 +31,19 @@ public class Fraction {
     int newNum = this.num * other.den + other.num * this.den;
     int newDen = this.den * other.den;
     return new Fraction(newNum, newDen);
- }
+   }
 
     public Fraction multiply(Fraction other) {
     return new Fraction(this.num * other.num, this.den * other.den);
-  }
+   }
 
     public double toDouble() {
     return (double) this.num / this.den;
-  }
+   }
 
     public String toString() {
     return num + "/" + den;
-  }
+   }
 
   public static void main(String[] args) {
         Fraction f = new Fraction(2, 3);
