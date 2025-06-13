@@ -45,4 +45,15 @@ public class Fraction {
     return num + "/" + den;
   }
 
+  public static void main(String[] args) {
+        Fraction f = new Fraction(2, 3);
+        Fraction g = new Fraction(1, 6);
+
+        System.out.println("f + g = " + f.add(g));
+        System.out.println("f * g = " + f.multiply(g));
+
+        assert f.add(g).toString().equals("5/6") : "Addition incorrecte";
+        assert f.multiply(g).toString().equals("1/9") : "Multiplication incorrecte";
+    }
+
 }
